@@ -12,6 +12,7 @@ class Result:
 class ResultCollection:
     def __init__(self):
         self.results = []
+        self.seed = ''.join(choice(ascii_uppercase) for i in range(10))
         pass
 
     def add(self, result):
